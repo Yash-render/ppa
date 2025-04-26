@@ -1,10 +1,10 @@
-streamlit
+streamlit==1.40.1
 pandas
 joblib
 requests
 PyMuPDF
-matplotlib
-plotly
+matplotlib==3.9.2
+plotly==5.18.0
 pydeck
 python-dotenv
 scikit-learn
