@@ -21,9 +21,15 @@ st.markdown("""
     border-radius: 40px;
     overflow: hidden;
     transition: all 0.5s ease-in-out;
+    padding-top: 2rem;
 }
 .stPlotlyChart > div:hover {
     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+}
+
+.stPlotlyChart .modebar {
+    top: 10px !important;
+    right: 20px !important;
 }
 
 .stPlotlyChart .gtitle, .stPlotlyChart .gtitle-main {
