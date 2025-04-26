@@ -240,8 +240,8 @@ elif page == "Impact Chatbot":
 elif page == "Data Dashboard":
     st.title("Powerplant Impact Dashboard")
 
-    df_merged = pd.read_csv("https://github.com/Yash-render/powerplantimpact/blob/main/Data/final_merged_dataset.csv")
-    df_labels = pd.read_csv("https://github.com/Yash-render/powerplantimpact/blob/main/Data/Dataset_with_Impact_Labels.csv")
+    df_merged = pd.read_csv("final_merged_dataset.csv")
+    df_labels = pd.read_csv("Dataset_with_Impact_Labels.csv")
 
     st.sidebar.markdown("### Dashboard Controls")
     
