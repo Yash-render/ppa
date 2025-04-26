@@ -22,6 +22,7 @@ st.markdown("""
     overflow: hidden;
     transition: all 0.5s ease-in-out;
     padding-top: 2rem;
+    width: 100% !important;
 }
 .stPlotlyChart > div:hover {
     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
