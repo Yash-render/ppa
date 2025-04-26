@@ -1,0 +1,10 @@
+streamlit
+pandas
+joblib
+requests
+PyMuPDF
+matplotlib
+plotly
+pydeck
+python-dotenv
+scikit-learn
