@@ -16,22 +16,25 @@ st.set_page_config(page_title="Powerplant Impact Analysis", layout="wide", initi
 
 st.markdown("""
 <style>
-
 .stPlotlyChart > div {
-    box-shadow: 0px 35px 40px rgba(0,0,0,0.05);
-    border-radius: 50px;
-    # padding: 2.5rem 2rem;
-    # background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
-    # margin: 2rem 0;
-    # width: 100% !important;
-    # box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
 }
+.stPlotlyChart > div:hover {
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+}
+
 .stPlotlyChart .gtitle, .stPlotlyChart .gtitle-main {
     padding-left: 2rem !important;
     padding-right: 2rem !important;
 }
-.streamlit-expanderHeader {font-weight:bold;}
+
+.streamlit-expanderHeader {
+    font-weight: bold;
+}
 </style>
+
 """, unsafe_allow_html=True)
 
 # Load trained pipeline
