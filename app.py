@@ -14,30 +14,30 @@ load_dotenv()
 st.set_page_config(page_title="Powerplant Impact Analysis", layout="wide", initial_sidebar_state="auto")
 
 
-st.markdown("""
-<style>
-body {
-    background: linear-gradient(to right, #ffecd2, #fcb69f);
-    color: #000000;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-}
-.stPlotlyChart > div {
-    box-shadow: 0px 35px 40px rgba(0,0,0,0.05);
-    border-radius: 50px;
-    padding: 2.5rem 2rem;
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
-    margin: 2rem 0;
-    width: 100% !important;
-    box-sizing: border-box;
-}
-.stPlotlyChart .gtitle, .stPlotlyChart .gtitle-main {
-    padding-left: 2rem !important;
-    padding-right: 2rem !important;
-}
-.streamlit-expanderHeader {font-weight:bold;}
-.css-10trblm {padding:1.5rem;}
-</style>
-""", unsafe_allow_html=True)
+# st.markdown("""
+# <style>
+# body {
+#     background: linear-gradient(to right, #ffecd2, #fcb69f);
+#     color: #000000;
+#     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+# }
+# .stPlotlyChart > div {
+#     box-shadow: 0px 35px 40px rgba(0,0,0,0.05);
+#     border-radius: 50px;
+#     padding: 2.5rem 2rem;
+#     background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+#     margin: 2rem 0;
+#     width: 100% !important;
+#     box-sizing: border-box;
+# }
+# .stPlotlyChart .gtitle, .stPlotlyChart .gtitle-main {
+#     padding-left: 2rem !important;
+#     padding-right: 2rem !important;
+# }
+# .streamlit-expanderHeader {font-weight:bold;}
+# .css-10trblm {padding:1.5rem;}
+# </style>
+# """, unsafe_allow_html=True)
 
 # Load trained pipeline
 pipeline = joblib.load("impact_classifier_pipeline_tuned.pkl")
