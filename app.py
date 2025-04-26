@@ -19,7 +19,8 @@ st.markdown("""
 .stPlotlyChart > div {
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
-    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
 }
 .stPlotlyChart > div:hover {
     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
