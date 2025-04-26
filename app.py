@@ -18,7 +18,7 @@ st.markdown("""
 <style>
 .stPlotlyChart > div {
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
-    border-radius: 20px;
+    border-radius: 40px;
     overflow: hidden;
     transition: all 0.5s ease-in-out;
 }
