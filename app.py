@@ -12,26 +12,25 @@ from dotenv import load_dotenv
 load_dotenv()
 
 st.set_page_config(page_title="Powerplant Impact Analysis", layout="wide", initial_sidebar_state="auto")
-
-
 st.markdown("""
 <style>
+/* Main Plot Container */
 .stPlotlyChart > div {
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
     border-radius: 40px;
     overflow: hidden;
     transition: all 0.5s ease-in-out;
-    padding-top: 2rem;
-    height: 100% !important;
-    width: 100% !important;
 }
+
+/* Shadow on Hover */
 .stPlotlyChart > div:hover {
     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
 }
 
+/* Move Toolbar inside nicely */
 .stPlotlyChart .modebar {
-    top: 10px !important;
-    right: 20px !important;
+    top: 20px !important;
+    right: 30px !important;
 }
 
 .stPlotlyChart .gtitle, .stPlotlyChart .gtitle-main {
@@ -39,11 +38,11 @@ st.markdown("""
     padding-right: 2rem !important;
 }
 
+/* Expander Title Bold */
 .streamlit-expanderHeader {
     font-weight: bold;
 }
 </style>
-
 """, unsafe_allow_html=True)
 
 # Load trained pipeline
