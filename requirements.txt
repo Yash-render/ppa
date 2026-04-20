@@ -7,4 +7,4 @@ matplotlib==3.9.2
 plotly==5.18.0
 pydeck
 python-dotenv
-scikit-learn
+scikit-learn=1.6.1
